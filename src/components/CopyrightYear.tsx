@@ -1,8 +1,6 @@
-import { cacheLife } from "next/cache";
+import { getCurrentYear } from "@/data/year";
 
-/** Ano atual, calculado no build e revalidado diariamente (compatível com Cache Components). */
+/** Ano atual do copyright. O valor vem cacheado e revalidado diariamente. */
 export async function CopyrightYear() {
-  "use cache";
-  cacheLife("days");
-  return <>{new Date().getFullYear()}</>;
+  return <>{await getCurrentYear()}</>;
 }

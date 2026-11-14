@@ -44,7 +44,7 @@ export const products: Product[] = [
     shortDescription:
       "Politriz para polir e raspar pisos de alta resistência, granilite, mármores, granitos, concreto e epóxi.",
     characteristics: [
-      "Mod JT2D motor weg trifásico - 4CV - 4P",
+      "Mod JT2D motor Mercosul trifásico - 4CV - 4P",
       "Voltagem: 220/380V",
       "Peso: 150kg",
       "Utilizada para polir e raspar pisos.",
@@ -63,7 +63,7 @@ export const products: Product[] = [
     seo: {
       title: "Politriz de pisos JT2D",
       description:
-        "Politriz JAHU JT2D: motor Weg trifásico 4CV, 220/380V, 150kg. Para polir e raspar granilite, mármore, granito, concreto e epóxi. Baixe o manual.",
+        "Politriz JAHU JT2D: motor Mercosul trifásico 4CV, 220/380V, 150kg. Para polir e raspar granilite, mármore, granito, concreto e epóxi. Baixe o manual.",
     },
   },
   {
@@ -73,7 +73,7 @@ export const products: Product[] = [
     shortDescription:
       "Politriz para polir e raspar pisos de alta resistência, granilite, mármores, granitos, concreto e epóxi.",
     characteristics: [
-      "Mod JM2D motor weg monofásico - 3CV - 4P",
+      "Mod JM2D motor Mercosul monofásico - 4CV - 4P",
       "Voltagem: 220/440V",
       "Peso: 160kg",
       "Utilizada para polir e raspar pisos.",
@@ -92,7 +92,7 @@ export const products: Product[] = [
     seo: {
       title: "Politriz de pisos JM2D",
       description:
-        "Politriz JAHU JM2D: motor Weg monofásico 3CV, 220/440V, 160kg. Para polir e raspar granilite, mármore, granito, concreto e epóxi. Baixe o manual.",
+        "Politriz JAHU JM2D: motor Mercosul monofásico 4CV, 220/440V, 160kg. Para polir e raspar granilite, mármore, granito, concreto e epóxi. Baixe o manual.",
     },
   },
   {
@@ -102,7 +102,7 @@ export const products: Product[] = [
     shortDescription:
       "Raspadora de alta produtividade com 2 discos diamantados, em média 300 metros por dia em piso de alta resistência.",
     characteristics: [
-      "Mod JAHU TURBO - motor weg 7.5CV - 4P",
+      "Mod JAHU TURBO - motor Mercosul 7.5CV - 4P",
       "Voltagem: 220/380V",
       "Peso: 160kg",
       "Utiliza discos com 44 diamantes para raspar.",
@@ -121,7 +121,7 @@ export const products: Product[] = [
     seo: {
       title: "Raspadora de pisos JAHU TURBO",
       description:
-        "JAHU TURBO: motor Weg 7.5CV, 220/380V, 160kg, 2 discos diamantados. Alta produtividade para raspar pisos de alta resistência. Baixe o manual.",
+        "JAHU TURBO: motor Mercosul 7.5CV, 220/380V, 160kg, 2 discos diamantados. Alta produtividade para raspar pisos de alta resistência. Baixe o manual.",
     },
   },
   {
@@ -131,7 +131,7 @@ export const products: Product[] = [
     shortDescription:
       "Lapidadora ideal para raspar, polir e lapidar pisos, com três diamantes de engate rápido em cada prato.",
     characteristics: [
-      "Mod JAHU 3D - motor weg 7.5CV - 4P",
+      "Mod JAHU 3D - motor Mercosul 7.5CV - 4P",
       "Voltagem: 220/380V",
       "Peso: 200kg",
       "Alta produtividade. Utiliza três diamantes de engate rápido em cada prato.",
@@ -152,7 +152,7 @@ export const products: Product[] = [
     seo: {
       title: "Lapidadora de pisos JAHU 3D",
       description:
-        "Lapidadora JAHU 3D: motor Weg 7.5CV, 220/380V, 200kg, três diamantes de engate rápido por prato. Para raspar, polir e lapidar pisos. Baixe o manual.",
+        "Lapidadora JAHU 3D: motor Mercosul 7.5CV, 220/380V, 200kg, três diamantes de engate rápido por prato. Para raspar, polir e lapidar pisos. Baixe o manual.",
     },
   },
   {
@@ -162,7 +162,7 @@ export const products: Product[] = [
     shortDescription:
       "Fresadora ideal para escarificar, remover, limpar e texturizar pisos, com ferramenta de ponta de Videa.",
     characteristics: [
-      "Mod JF 300 - motor weg 4CV - 6P",
+      "Mod JF 300 - motor Mercosul 4CV - 6P",
       "Voltagem: 220/380/440V ou motor 4CV monofásico",
       "Peso: 150kg",
       "Ideal para escarificar, remover, limpar e texturizar pisos.",
@@ -181,7 +181,7 @@ export const products: Product[] = [
     seo: {
       title: "Fresadora de pisos JF300",
       description:
-        "Fresadora JAHU JF300: motor Weg 4CV, 150kg. Para escarificar, remover, limpar e texturizar pisos, com ferramenta de ponta de Videa. Baixe o manual.",
+        "Fresadora JAHU JF300: motor Mercosul 4CV, 150kg. Para escarificar, remover, limpar e texturizar pisos, com ferramenta de ponta de Videa. Baixe o manual.",
     },
   },
 ];

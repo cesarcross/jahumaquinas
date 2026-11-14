@@ -5,8 +5,9 @@ import { CallButton, WhatsAppButton } from "@/components/ContactButtons";
 import { ArrowIcon } from "@/components/icons";
 import { JsonLd } from "@/components/JsonLd";
 import { Seals } from "@/components/Seals";
-import { assistance, company, companyEmail } from "@/data/company";
+import { assistance, company, companyEmail, yearsInBusiness } from "@/data/company";
 import { home } from "@/data/content";
+import { getCurrentYear } from "@/data/year";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
@@ -28,7 +29,9 @@ const jsonLd = {
   // TODO: adicionar `address` quando o endereço for confirmado.
 };
 
-export default function Home() {
+export default async function Home() {
+  const years = yearsInBusiness(await getCurrentYear());
+
   return (
     <>
       <JsonLd data={jsonLd} />
@@ -43,7 +46,7 @@ export default function Home() {
             <h1 className="text-3xl font-bold leading-tight md:text-5xl">{home.title}</h1>
             <p className="text-base leading-relaxed text-blue-100 md:text-lg">
               Lixadeiras, lapidadoras, raspadoras, fresadoras e politrizes de pisos para a
-              construção civil, com assistência técnica e compra facilitada pelo Cartão BNDES.
+              construção civil, e compra facilitada pelo Cartão BNDES.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -80,7 +83,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-brand-night md:text-3xl">
               Quem é a JAHU
             </h2>
-            <p className="leading-relaxed text-muted">{home.intro}</p>
+            <p className="leading-relaxed text-muted">{home.intro(years)}</p>
           </div>
           <ul className="grid content-start gap-3">
             {home.lines.map((line) => (
@@ -139,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Assistência */}
-      <section className="mx-auto max-w-6xl px-4 pt-14">
+      {/* <section className="mx-auto max-w-6xl px-4 pt-14">
         <div className="flex flex-col items-start gap-5 rounded-3xl bg-paper p-8 shadow-card ring-1 ring-brand-night/5 md:flex-row md:items-center md:p-12">
           <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-brand text-white">
             <Image src="/images/assets/repair-tool.png" alt="" width={36} height={36} className="size-9 brightness-0 invert" />
@@ -159,7 +162,7 @@ export default function Home() {
             Saiba mais <ArrowIcon width={18} height={18} />
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-4 pt-14">

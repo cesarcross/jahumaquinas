@@ -80,7 +80,7 @@ Estrutura de cada página de produto (exemplo real, JT2D):
 
 - **Foto principal** + botão "Ver fotos" (abre mais fotos)
 - **CARACTERÍSTICAS**
-  - Mod JT2D motor weg trifásico - 4CV - 4P
+  - Mod JT2D motor mercosul trifásico - 4CV - 4P
   - Voltagem: 220/380V
   - Peso: 150kg
   - Utilizada para polir e raspar pisos.

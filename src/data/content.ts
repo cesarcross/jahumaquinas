@@ -2,8 +2,8 @@ export const navItems = [
   { href: "/", label: "Home" },
   { href: "/produtos/jt2d", label: "Produtos", match: "/produtos" },
   { href: "/galeria", label: "Galeria" },
-  { href: "/parceiros", label: "Parceiros" },
-  { href: "/assistencia-tecnica", label: "Assistência Técnica" },
+  // { href: "/parceiros", label: "Parceiros" },
+  // { href: "/assistencia-tecnica", label: "Assistência Técnica" },
   { href: "/contato", label: "Contato" },
 ] as const;
 
@@ -15,10 +15,10 @@ export const seals = [
 
 export const home = {
   title: "JAHU Máquinas 100% brasileira desde 1988",
-  // TODO (cliente): "há mais de 25 anos" vem do texto antigo (rodapé 2014). Confirmar
-  // se atualiza para "mais de 35 anos" ou "desde 1988". Mantido como no original.
-  intro:
-    "A JAHU - Máquinas e Ferramentas, fabrica máquinas politrizes há mais de 25 anos em parceria com a APC - Manutenção de Máquinas e Equipamentos para construção civil. Juntas, são responsáveis pela fabricação, manutenção e comercialização de:",
+  intro: (years: number) =>
+    `A JAHU - Máquinas e Ferramentas, fabrica e comercializa máquinas politrizes e equipamentos para construção civil há ${years} anos. 
+  Nossas máquinas trabalham em pisos de alta resistência e atendem médios e grandes empreendimentos, como galpões, mercados, condomínios, 
+  hotéis, terrenos, shoppings e aeroportos.`,
   lines: [
     { name: "Lixadeira de pisos" },
     { name: "Lapidadora de pisos" },

@@ -26,6 +26,16 @@ export const company = {
 
 export const companyEmail = `${company.email.user}@${company.email.domain}`;
 
+/**
+ * Anos de atuação, de `company.foundedYear` até `currentYear`.
+ *
+ * Pura de propósito: o ano atual entra como argumento (ver `getCurrentYear` em
+ * `@/data/year`) em vez de ser lido aqui dentro, para não acoplar os dados ao relógio.
+ */
+export function yearsInBusiness(currentYear: number) {
+  return currentYear - company.foundedYear;
+}
+
 export function whatsappLink(message: string) {
   return `https://wa.me/${company.whatsapp.number}?text=${encodeURIComponent(message)}`;
 }
